@@ -6,15 +6,15 @@
 package Lab04;
 
 /**
- * @author Ahmed Abuwarda
+ * @author Ahmed Abuwarda.
  */
 public class L4_02_SumOfGeoSeries {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic here.
 
         float a = 2;
         float r = 2;
@@ -24,7 +24,14 @@ public class L4_02_SumOfGeoSeries {
 
     }
 
+    /**
+     * @param a
+     * @param r
+     * @param n
+     * @return The Sum Of Geo Series.
+     */
     private static float sumOfGS(float a, float r, float n) {
         return (a * (1 - (int) Math.pow(r, n))) / (1 - r);
     }
+
 }

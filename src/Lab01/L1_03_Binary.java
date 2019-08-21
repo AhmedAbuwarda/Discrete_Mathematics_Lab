@@ -8,25 +8,26 @@ package Lab01;
 import java.util.Scanner;
 
 /**
- * @author Ahmed Abuwarda
+ * @author Ahmed Abuwarda.
  */
 public class L1_03_Binary {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic here.
 
         BinaryOperation();
 
     }
 
     /**
-     * @return calculate binary operation
+     * @return Calculate Binary Operation.
      */
     public static void BinaryOperation() {
 
+        // Create A Scanner To Take The Input From The User.
         Scanner input = new Scanner(System.in);
         System.out.print("Enter first number: ");
         String firstNum = input.next();
@@ -42,7 +43,7 @@ public class L1_03_Binary {
         int result = 0;
         int remainder = 0;
 
-        // switch case
+        // Switch Case.
         switch (operation) {
             case "+":
                 result = num1 + num2;
@@ -57,13 +58,17 @@ public class L1_03_Binary {
                 result = num1 / num2;
                 remainder = num1 % num2;
                 break;
+            // Default Block.
             default:
                 System.out.println("Invalid operation! try again!");
                 break;
         }
 
+        // Print The Result.
         System.out.println("The result: " + Integer.toBinaryString(result) + ", int = " + result);
         System.out.println("The remainder: : " + Integer.toBinaryString(remainder) +
                 ", int: " + remainder);
+
     }
+
 }

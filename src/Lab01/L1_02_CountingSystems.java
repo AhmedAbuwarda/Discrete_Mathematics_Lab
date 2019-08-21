@@ -8,25 +8,26 @@ package Lab01;
 import java.util.Scanner;
 
 /**
- * @author Ahmed Abuwarda
+ * @author Ahmed Abuwarda.
  */
 public class L1_02_CountingSystems {
 
     /**
-     * @param args the command line arguments
+     * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO code application logic here.
 
         convertCounting();
 
     }
 
     /**
-     * @return number in different format
+     * @return Number In Different Format.
      */
     public static void convertCounting() {
 
+        // Create A Scanner To Take The Input From The User.
         Scanner input = new Scanner(System.in);
         System.out.println("Please!, enter counting number: ");
         System.out.print("From: ");
@@ -40,9 +41,11 @@ public class L1_02_CountingSystems {
 
         int num = 0;
 
-        // switch case from
+        // Switch Case from.
         switch (from) {
             case 16:
+
+                //Try Catch Block.
                 try {
                     num = Integer.parseInt(numb, 16);
                     break;
@@ -51,6 +54,8 @@ public class L1_02_CountingSystems {
                     break;
                 }
             case 8:
+
+                //Try Catch Block.
                 try {
                     num = Integer.parseInt(numb, 8);
                     break;
@@ -59,6 +64,8 @@ public class L1_02_CountingSystems {
                     break;
                 }
             case 10:
+
+                //Try Catch Block.
                 try {
                     num = Integer.parseInt(numb, 10);
                     break;
@@ -67,6 +74,8 @@ public class L1_02_CountingSystems {
                     break;
                 }
             case 2:
+
+                //Try Catch Block.
                 try {
                     num = Integer.parseInt(numb, 2);
                     break;
@@ -74,13 +83,17 @@ public class L1_02_CountingSystems {
                     System.out.println("Error");
                     break;
                 }
+
+                //Default Block.
             default:
                 System.out.println("Error");
                 break;
         }
 
+        // Print The Result.
         System.out.print("The result is: ");
 
+        // If Statement.
         if (to == 16) {
             System.out.println(Integer.toHexString(num));
         } else if (to == 8) {
@@ -92,4 +105,5 @@ public class L1_02_CountingSystems {
         }
 
     }
+
 }
