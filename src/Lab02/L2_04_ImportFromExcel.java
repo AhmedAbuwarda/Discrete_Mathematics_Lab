@@ -1,3 +1,8 @@
+/*
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
+ */
+
 package Lab02;
 
 import org.apache.poi.ss.usermodel.*;
@@ -9,9 +14,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * @author Ahmed Abuwarda
+ */
 public class L2_04_ImportFromExcel {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) throws FileNotFoundException, IOException {
+        // TODO code application logic here
 
         List<String> A = new ArrayList<>();
         List<String> B = new ArrayList<>();
@@ -28,32 +40,34 @@ public class L2_04_ImportFromExcel {
             Iterator<Row> iterator2 = dataTypeShet2.iterator();
 
             while (iterator.hasNext()) {
+
                 Row currentRow = iterator.next();
-                Iterator<Cell> cellIterator = currentRow.iterator();
-                while (cellIterator.hasNext()) {
-                    Cell currentCell = cellIterator.next();
+
+                for (Cell currentCell : currentRow) {
+
                     if (currentCell.getCellTypeEnum() == CellType.STRING) {
                         A.add(currentCell.getStringCellValue());
                     } else if (currentCell.getCellTypeEnum() == CellType.NUMERIC) {
                         System.out.println(currentCell.getNumericCellValue() + "--");
                     }
+
                 }
             }
             while (iterator2.hasNext()) {
+
                 Row currentRow = iterator2.next();
-                Iterator<Cell> cellIterator = currentRow.iterator();
-                while (cellIterator.hasNext()) {
-                    Cell currentCell = cellIterator.next();
+
+                for (Cell currentCell : currentRow) {
+
                     if (currentCell.getCellTypeEnum() == CellType.STRING) {
                         B.add(currentCell.getStringCellValue());
                     } else if (currentCell.getCellTypeEnum() == CellType.NUMERIC) {
                         System.out.println(currentCell.getNumericCellValue() + "--");
                     }
+
                 }
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -65,7 +79,5 @@ public class L2_04_ImportFromExcel {
         System.out.println("First Set: " + A);
         System.out.println("Second Set: " + B);
         System.out.println("New Set: " + newList);
-
     }
-
 }

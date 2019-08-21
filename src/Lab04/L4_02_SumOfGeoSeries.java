@@ -1,8 +1,20 @@
+/*
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
+ */
+
 package Lab04;
 
+/**
+ * @author Ahmed Abuwarda
+ */
 public class L4_02_SumOfGeoSeries {
 
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
+        // TODO code application logic here
 
         float a = 2;
         float r = 2;
@@ -15,5 +27,4 @@ public class L4_02_SumOfGeoSeries {
     private static float sumOfGS(float a, float r, float n) {
         return (a * (1 - (int) Math.pow(r, n))) / (1 - r);
     }
-
 }
