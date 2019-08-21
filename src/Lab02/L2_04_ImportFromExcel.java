@@ -17,12 +17,12 @@ public class L2_04_ImportFromExcel {
         List<String> B = new ArrayList<>();
 
         try {
-            FileInputStream excelFile = new FileInputStream(new File("excell.xlsx"));
+            FileInputStream excelFile = new FileInputStream(new File("Files\\excell.xlsx"));
             Workbook workbook = new XSSFWorkbook(excelFile);
             Sheet dataTypeShet = workbook.getSheetAt(0);
             Iterator<Row> iterator = dataTypeShet.iterator();
 
-            FileInputStream excelFile2 = new FileInputStream(new File("excell2.xlsx"));
+            FileInputStream excelFile2 = new FileInputStream(new File("Files\\excell2.xlsx"));
             Workbook workbook2 = new XSSFWorkbook(excelFile2);
             Sheet dataTypeShet2 = workbook2.getSheetAt(0);
             Iterator<Row> iterator2 = dataTypeShet2.iterator();
