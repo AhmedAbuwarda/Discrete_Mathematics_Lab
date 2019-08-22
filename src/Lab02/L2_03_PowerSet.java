@@ -34,7 +34,7 @@ public class L2_03_PowerSet {
 
         long powerSetSize = (long) Math.pow(2, setSize);
 
-        //create New Set inside of List Called powerSet.
+        //Create New Set Inside Of List Called powerSet.
         List<Set<String>> powerSet = new ArrayList<Set<String>>();
 
         // For Loop.

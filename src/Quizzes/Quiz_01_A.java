@@ -82,7 +82,7 @@ public class Quiz_01_A {
 
         boolean isSub = false;
 
-        // For Loop.
+        // For Each Loop.
         for (Integer i : SM) {
 
             // If Statement.

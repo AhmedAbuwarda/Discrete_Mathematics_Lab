@@ -49,7 +49,7 @@ public class L2_04_ImportFromExcel {
 
                 Row currentRow = iterator.next();
 
-                // For Loop.
+                // For Each Loop.
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.
@@ -67,7 +67,7 @@ public class L2_04_ImportFromExcel {
 
                 Row currentRow = iterator2.next();
 
-                // For Loop.
+                // For Each Loop.
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.

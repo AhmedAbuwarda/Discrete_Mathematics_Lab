@@ -53,7 +53,7 @@ public class Quiz_02 {
 
                 Row currentRow = iterator.next();
 
-                // For Loop.
+                // For Each Loop.
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.
@@ -72,7 +72,7 @@ public class Quiz_02 {
 
                 Row currentRow = iterator2.next();
 
-                // For Loop.
+                // For Each Loop.
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.
@@ -91,7 +91,7 @@ public class Quiz_02 {
 
                 Row currentRow = iterator3.next();
 
-                // For Loop.
+                // For Each Loop.
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.
@@ -115,11 +115,11 @@ public class Quiz_02 {
         System.out.println("C Set: " + A3);
 
         // Print The Result "If Statement".
-        if (A2.containsAll(A1)){
+        if (A2.containsAll(A1)) {
             System.out.println("A is a sub set of B");
-        }else if (A2.containsAll(A3)){
+        } else if (A2.containsAll(A3)) {
             System.out.println("C is a sub set of B");
-        }else if (A3.containsAll(A1)){
+        } else if (A3.containsAll(A1)) {
             System.out.println("A is a sub set of C");
         }
 

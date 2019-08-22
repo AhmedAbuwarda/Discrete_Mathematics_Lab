@@ -25,12 +25,12 @@ public class L2_01_SetOperation {
         Set<Integer> A = new HashSet<Integer>();
         Set<Integer> B = new HashSet<Integer>();
 
-        // Add Numbers to Set A Using For Loop.
+        // Add Numbers To Set A Using For Loop.
         for (int i = 0; i <= 3; i++) {
             A.add(i);
         }
 
-        // Add Numbers to Set B Using For Loop.
+        // Add Numbers To Set B Using For Loop.
         for (int i = 2; i <= 5; i++) {
             B.add(i);
         }

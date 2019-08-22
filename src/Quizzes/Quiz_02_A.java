@@ -72,10 +72,10 @@ public class Quiz_02_A {
             Workbook workbook = new XSSFWorkbook(excelFile2);
             Sheet datatypeSheet = workbook.getSheetAt(0);
 
-            // This For One Row From Sheet "For Loop".
+            // This For One Row From Sheet "For Each Loop".
             for (Row currentRow : datatypeSheet) {
 
-                // The Raw have Many Cell "Another For Loop".
+                // The Raw have Many Cell "Another For Each Loop".
                 for (Cell currentCell : currentRow) {
 
                     //If Statement.

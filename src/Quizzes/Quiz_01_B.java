@@ -83,7 +83,6 @@ public class Quiz_01_B {
     }*/
 
     /**
-     *
      * @param a
      * @param b
      * @return Is Equals Or Not.

@@ -26,10 +26,10 @@ public class Quiz_01 {
         int n2 = 0;
         int n3 = 0;
 
-        // For Loop.
+        // For Each Loop.
         for (int value : a) {
 
-            // Another For Loop.
+            // Another For Each Loop.
             for (int i : b) {
 
                 // If Statement.
@@ -44,10 +44,10 @@ public class Quiz_01 {
 
         System.out.print("A n C: ");
 
-        // For Loop.
+        // For Each Loop.
         for (int value : a) {
 
-            // Another For Loop.
+            // Another For Each Loop.
             for (int i : c) {
 
                 // If Statement.
@@ -60,10 +60,10 @@ public class Quiz_01 {
 
         }
 
-        // For Loop.
+        // For Each Loop.
         for (int value : b) {
 
-            // Another For Loop.
+            // Another For Each Loop.
             for (int i : c) {
 
                 // If Statement.
@@ -77,7 +77,7 @@ public class Quiz_01 {
         }
 
         // If Statement.
-        if (n1 == n3){
+        if (n1 == n3) {
             System.out.println("A n B == B n C");
         }
 

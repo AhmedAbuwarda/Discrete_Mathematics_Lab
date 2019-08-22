@@ -45,6 +45,7 @@ public class L1_03_Binary {
 
         // Switch Case.
         switch (operation) {
+
             case "+":
                 result = num1 + num2;
                 break;
@@ -58,10 +59,12 @@ public class L1_03_Binary {
                 result = num1 / num2;
                 remainder = num1 % num2;
                 break;
+
             // Default Block.
             default:
                 System.out.println("Invalid operation! try again!");
                 break;
+
         }
 
         // Print The Result.

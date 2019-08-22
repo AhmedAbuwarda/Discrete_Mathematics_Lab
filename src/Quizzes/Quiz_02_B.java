@@ -73,10 +73,10 @@ public class Quiz_02_B {
             Workbook workbook = new XSSFWorkbook(excelFile2);
             Sheet datatypeSheet = workbook.getSheetAt(0);
 
-            // This For One Row From Sheet.
+            // This For One Row From Sheet "For Each Loop".
             for (Row currentRow : datatypeSheet) {
 
-                // The Raw Have Many Eell "For Loop".
+                // The Raw Have Many Eell "Another For Each Loop".
                 for (Cell currentCell : currentRow) {
 
                     // If Statement.
@@ -105,7 +105,7 @@ public class Quiz_02_B {
 
         boolean isSub = false;
 
-        // For Loop.
+        // For Each Loop.
         for (Double i : SM) {
 
             // If Statement.

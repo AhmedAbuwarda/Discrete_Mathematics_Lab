@@ -63,7 +63,7 @@ public class L1_01_Logic {
         // For Loop.
         for (int i = 0; i < array.length; i++) {
 
-            // Another For loop.
+            // Another For Loop.
             for (int j = 0; j < array2.length; j++) {
                 array2[j] = array[i].charAt(j) - '0';
             }
@@ -71,35 +71,49 @@ public class L1_01_Logic {
 
             // Switch Case.
             switch (operation.toLowerCase()) {
+
                 case "and":
+
+                    // For Loop.
                     for (int j = 1; j < array2.length; j++) {
                         numbOfOperations &= array2[j];
                     }
                     break;
                 case "or":
+
+                    // For Loop.
                     for (int j = 1; j < array2.length; j++) {
                         numbOfOperations |= array2[j];
                     }
                     break;
                 case "xor":
-                    for (int j = 0; j < array2.length; j++) {
-                        numbOfOperations ^= array2[j];
+
+                    // For Each.
+                    for (int value : array2) {
+                        numbOfOperations ^= value;
                     }
                     break;
                 case "imp":
-                    for (int j = 0; j < array2.length; j++) {
+
+                    // For Each.
+                    for (int value : array2) {
                         numbOfOperations = inverter(numbOfOperations);
-                        numbOfOperations |= array2[j];
+                        numbOfOperations |= value;
                     }
                 case "bic":
-                    for (int j = 0; j < array2.length; j++) {
-                        numbOfOperations ^= array2[j];
+
+                    // For Each.
+                    for (int value : array2) {
+                        numbOfOperations ^= value;
                     }
                     numbOfOperations = inverter(numbOfOperations);
                     break;
+
+                // Default Block.
                 default:
                     System.out.println("Please!, enter correct operation!");
                     break L;
+
             }
 
             // Print The Result.

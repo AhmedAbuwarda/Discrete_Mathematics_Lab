@@ -43,6 +43,7 @@ public class L1_02_CountingSystems {
 
         // Switch Case from.
         switch (from) {
+
             case 16:
 
                 //Try Catch Block.
@@ -88,6 +89,7 @@ public class L1_02_CountingSystems {
             default:
                 System.out.println("Error");
                 break;
+
         }
 
         // Print The Result.
