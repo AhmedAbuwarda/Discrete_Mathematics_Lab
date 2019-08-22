@@ -62,7 +62,7 @@ public class Quiz_02_B {
      */
     private static Set<Double> getAllListOfCarsInExcel(String file) {
 
-        // create New Set set.
+        // Create New Set set.
         Set<Double> set = new HashSet<>();
 
         // Try Catch Block.
