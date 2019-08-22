@@ -22,8 +22,8 @@ public class L2_01_SetOperation {
         // TODO code application logic here.
 
         // Create Sets A , B.
-        Set<Integer> A = new HashSet<Integer>();
-        Set<Integer> B = new HashSet<Integer>();
+        Set<Integer> A = new HashSet<>();
+        Set<Integer> B = new HashSet<>();
 
         // Add Numbers To Set A Using For Loop.
         for (int i = 0; i <= 3; i++) {
@@ -58,7 +58,7 @@ public class L2_01_SetOperation {
                 A.toString(), B.toString(), difference.toString());
 
         // Create New List cartesianProduct.
-        List<Set<Integer>> cartesianProduct = new ArrayList<Set<Integer>>();
+        List<Set<Integer>> cartesianProduct = new ArrayList<>();
 
         // For Loop.
         for (int i = 0; i < A.size(); i++) {
@@ -66,7 +66,7 @@ public class L2_01_SetOperation {
             // Another For Loop.
             for (int j = 0; j < B.size(); j++) {
 
-                Set<Integer> compination = new HashSet<Integer>();
+                Set<Integer> compination = new HashSet<>();
                 compination.add(i);
                 compination.add(j);
                 cartesianProduct.add(compination);

@@ -42,9 +42,9 @@ public class L3_01_TowersOfHanoi {
     }
 
     /**
-     * @param disks
-     * @param startPeg
-     * @param endPeg
+     * @param disks The Number Of Disks.
+     * @param startPeg Start Peg.
+     * @param endPeg End Peg.
      * @return firstSteps + thisStep + lastStep.
      */
     private static String solve(int disks, int startPeg, int endPeg) {

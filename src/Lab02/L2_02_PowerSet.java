@@ -24,8 +24,8 @@ public class L2_02_PowerSet {
     }
 
     /**
-     * @param set
-     * @param setSize
+     * @param set Any Set.
+     * @param setSize Set Size.
      */
     private static void printPowerSet(char[] set, int setSize) {
 

@@ -85,9 +85,9 @@ public class L2_04_ImportFromExcel {
         }
 
         // Create New Sets.
-        Set<String> newSet = new HashSet<String>(A);
+        Set<String> newSet = new HashSet<>(A);
         newSet.addAll(B);
-        List<String> newList = new ArrayList<String>(newSet);
+        List<String> newList = new ArrayList<>(newSet);
 
         // Print The Result.
         System.out.println("First Set: " + A);

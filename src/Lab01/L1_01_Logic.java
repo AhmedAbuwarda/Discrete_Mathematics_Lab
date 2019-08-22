@@ -24,7 +24,7 @@ public class L1_01_Logic {
     }
 
     /**
-     * @return truth table.
+     * This Method Returns Truth Table.
      */
     public static void logic() {
 
@@ -54,18 +54,18 @@ public class L1_01_Logic {
 
         }
 
-        int array2[] = new int[lengthOfLargeNumber];
+        int[] array2 = new int[lengthOfLargeNumber];
         System.out.println("The truth table: -----");
         int numbOfOperations = 1;
 
         L:
 
-        // For Loop.
-        for (int i = 0; i < array.length; i++) {
+        // For Each Loop.
+        for (String s : array) {
 
             // Another For Loop.
             for (int j = 0; j < array2.length; j++) {
-                array2[j] = array[i].charAt(j) - '0';
+                array2[j] = s.charAt(j) - '0';
             }
             numbOfOperations = array2[0];
 
@@ -117,7 +117,7 @@ public class L1_01_Logic {
             }
 
             // Print The Result.
-            System.out.println(array[i] + "\t" + numbOfOperations);
+            System.out.println(s + "\t" + numbOfOperations);
             System.out.println("*****************");
             numbOfOperations = 1;
 
@@ -126,10 +126,10 @@ public class L1_01_Logic {
     }
 
     /**
-     * @param x
+     * @param x Any Number To Invert.
      * @return zero or one.
      */
-    public static int inverter(int x) {
+    private static int inverter(int x) {
         return x == 1 ? 0 : 1;
     }
 

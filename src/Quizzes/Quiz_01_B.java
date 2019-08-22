@@ -20,9 +20,9 @@ public class Quiz_01_B {
         // TODO code application logic here.
 
         // Create Sets A, B , C.
-        Set<Integer> A = new HashSet<Integer>();
-        Set<Integer> B = new HashSet<Integer>();
-        Set<Integer> C = new HashSet<Integer>();
+        Set<Integer> A = new HashSet<>();
+        Set<Integer> B = new HashSet<>();
+        Set<Integer> C = new HashSet<>();
 
         // Add Numbers To Set A Using For Loop.
         for (int i = 1; i < 7; i++) {
@@ -42,15 +42,15 @@ public class Quiz_01_B {
         C.add(2);
 
         // Create New Sets intersection_A_B , intersection_A_C , intersection_B_C.
-        Set<Integer> intersection_A_B = new HashSet<Integer>(A);
+        Set<Integer> intersection_A_B = new HashSet<>(A);
         intersection_A_B.retainAll(B);
         System.out.println("intersection between A and B is " + intersection_A_B);
 
-        Set<Integer> intersection_A_C = new HashSet<Integer>(A);
+        Set<Integer> intersection_A_C = new HashSet<>(A);
         intersection_A_C.retainAll(C);
         System.out.println("intersection between A and C is " + intersection_A_C);
 
-        Set<Integer> intersection_B_C = new HashSet<Integer>(B);
+        Set<Integer> intersection_B_C = new HashSet<>(B);
         intersection_B_C.retainAll(C);
         System.out.println("intersection between B and C is " + intersection_B_C);
 
@@ -83,11 +83,11 @@ public class Quiz_01_B {
     }*/
 
     /**
-     * @param a
-     * @param b
+     * @param a The First Set.
+     * @param b The Second Set.
      * @return Is Equals Or Not.
      */
-    public static boolean check(Set<Integer> a, Set<Integer> b) {
+    private static boolean check(Set<Integer> a, Set<Integer> b) {
         return a.equals(b);
     }
 

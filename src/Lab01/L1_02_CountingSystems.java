@@ -23,9 +23,9 @@ public class L1_02_CountingSystems {
     }
 
     /**
-     * @return Number In Different Format.
+     * This Method Returns A Number In Different Format.
      */
-    public static void convertCounting() {
+    private static void convertCounting() {
 
         // Create A Scanner To Take The Input From The User.
         Scanner input = new Scanner(System.in);

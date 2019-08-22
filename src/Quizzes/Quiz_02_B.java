@@ -57,7 +57,7 @@ public class Quiz_02_B {
     }
 
     /**
-     * @param file
+     * @param file Any .xlsx File.
      * @return Set.
      */
     private static Set<Double> getAllListOfCarsInExcel(String file) {
@@ -97,8 +97,8 @@ public class Quiz_02_B {
     }
 
     /**
-     * @param SM
-     * @param BI
+     * @param SM The First Set.
+     * @param BI The Second Set.
      * @return Is Sub Set Or Not.
      */
     private static Boolean isSubSet(Set<Double> SM, Set<Double> BI) {

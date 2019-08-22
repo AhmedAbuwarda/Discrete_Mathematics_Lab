@@ -74,8 +74,8 @@ public class Quiz_01_A {
     }
 
     /**
-     * @param SM
-     * @param BI
+     * @param SM The First Set.
+     * @param BI The Second Set.
      * @return Is SubSet Or Not.
      */
     private static Boolean isSubSet(Set<Integer> SM, Set<Integer> BI) {

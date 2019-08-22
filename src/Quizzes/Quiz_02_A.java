@@ -22,7 +22,7 @@ public class Quiz_02_A {
     /**
      * @param args the command line arguments.
      */
-    private static void main(String[] args) {
+    public static void main(String[] args) {
         // TODO code application logic here.
 
         // Create New Sets setA , setB , setC.
@@ -57,7 +57,7 @@ public class Quiz_02_A {
     }
 
     /**
-     * @param file
+     * @param file Any .xlsx File.
      * @return Set.
      */
     private static Set<Double> getAllListOfCarsInExcel(String file) {
@@ -96,8 +96,8 @@ public class Quiz_02_A {
     }
 
     /**
-     * @param a
-     * @param b
+     * @param a The First Set.
+     * @param b The Second Set.
      * @return Is Equals Or Not.
      */
     private static boolean check(Set<Double> a, Set<Double> b) {

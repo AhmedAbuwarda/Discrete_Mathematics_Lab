@@ -23,9 +23,9 @@ public class L1_03_Binary {
     }
 
     /**
-     * @return Calculate Binary Operation.
+     * This Method Calculates Binary Operation.
      */
-    public static void BinaryOperation() {
+    private static void BinaryOperation() {
 
         // Create A Scanner To Take The Input From The User.
         Scanner input = new Scanner(System.in);

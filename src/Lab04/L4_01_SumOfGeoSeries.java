@@ -25,9 +25,9 @@ public class L4_01_SumOfGeoSeries {
     }
 
     /**
-     * @param a
-     * @param r
-     * @param n
+     * @param a The Parameter From Geo Series.
+     * @param r The Parameter From Geo Series.
+     * @param n The Parameter From Geo Series.
      * @return The Sum Of Geo Series.
      */
     private static float sumOfGS(float a, float r, float n) {
