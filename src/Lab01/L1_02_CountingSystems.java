@@ -30,10 +30,10 @@ public class L1_02_CountingSystems {
         // Create A Scanner To Take The Input From The User.
         Scanner input = new Scanner(System.in);
         System.out.println("Please!, enter counting number: ");
-        System.out.print("From: ");
+        System.out.print("From: "); // ex 2 - 8 - 10 - 16.
         int from = input.nextInt();
 
-        System.out.print("To: ");
+        System.out.print("To: ");   // ex 2 - 8 - 10 - 16.
         int to = input.nextInt();
 
         System.out.print("Please!, Enter number: ");
